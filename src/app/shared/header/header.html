@@ -1,1 +1,46 @@
-<p>header works!</p>
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand title" href="#">Kevin Willot</a>
+
+    <!-- Menu normal pour les grands écrans -->
+    <div class="d-none d-lg-block">
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item me-3">
+          <a class="nav-link active" href="#home">Accueil</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="#about">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bouton pour offcanvas (petits écrans uniquement) -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" title="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Offcanvas pour les petits écrans -->
+<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about" data-bs-dismiss="offcanvas">À propos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>

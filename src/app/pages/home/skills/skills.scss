@@ -1,0 +1,36 @@
+// TODO: kwi check styles
+
+.skills-section {
+  min-height: var(--section-min-height);
+  min-height: var(--section-min-height-svh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+  text-align: center;
+}
+
+.skills-content {
+  max-width: 1200px;
+  width: 100%;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    color: #444;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    color: #555;
+  }
+}

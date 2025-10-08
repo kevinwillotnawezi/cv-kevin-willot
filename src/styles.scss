@@ -2,6 +2,13 @@
 
 @use 'bootstrap/scss/bootstrap';
 
+// Variables CSS globales
+:root {
+  --header-height: 70px;
+  --section-min-height: calc(100vh - var(--header-height));
+  --section-min-height-svh: calc(100svh - var(--header-height));
+}
+
 body {
   // margin: 0;
   font-family: 'Ubuntu', sans-serif;
